@@ -33,6 +33,7 @@ COPY ["src/Services/", "Services/"]
 COPY ["src/Persistence/", "Persistence/"]
 COPY ["src/Domain/", "Domain/"]
 
+# edit
 # Restore & build app
 RUN dotnet restore "Server/Server.csproj"
 RUN dotnet build "Server/Server.csproj" -c Release -o /app/build --no-restore
